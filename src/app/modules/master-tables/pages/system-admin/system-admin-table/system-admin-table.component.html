@@ -1,0 +1,27 @@
+<p>system-admin-table works!</p>
+
+<h1>
+   THIS IS SYSTEM ADMIN TABLE
+</h1>
+
+<button (click)="sendApiRequest()">
+   GET API DATA
+   <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+   </div>
+</button>
+
+<table style="border: 1px solid black; width: 100%;">
+   <tr>
+      <th>UserID</th>
+      <td>{{ systemAdminDataRes?.userId }}</td>
+   </tr>
+   <tr>
+      <th>ID</th>
+      <td>{{ systemAdminDataRes?.id }}</td>
+   </tr>
+   <tr>
+      <th>Title</th>
+      <td>{{ systemAdminDataRes?.title }}</td>
+   </tr>
+</table>
